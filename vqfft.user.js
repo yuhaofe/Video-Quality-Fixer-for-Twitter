@@ -7,11 +7,23 @@
 // @description:zh  强制Twitter播放最高画质的视频
 // @author          flyhaozi
 // @match           https://twitter.com/*
-// @run-at          document-start
 // @grant           unsafeWindow
 // ==/UserScript==
 
 (function() {
+    // unregister twitter serviceworker
+    function unregisterServiceWorker(){
+        unsafeWindow.navigator.serviceWorker.getRegistration().then(reg => {
+            if(reg) reg.unregister();
+        });
+    }
+
+    unregisterServiceWorker();
+    unsafeWindow.navigator.serviceWorker.addEventListener('controllerchange', () => {
+        unregisterServiceWorker();
+    });
+
+    console.log("■ Video Quality Fixer for Twitter ■ service worker unregistered!");
     console.log("■ Video Quality Fixer for Twitter ■ start loading...");
 
     var realOpen = unsafeWindow.XMLHttpRequest.prototype.open;
@@ -33,6 +45,12 @@
         });
         return realOpen.apply(this, arguments);
     };
+
+    // a sign helps identify if userscript loaded successfully
+    var sign = document.createElement("div");
+    sign.innerText = "HD";
+    sign.style = "position: fixed; right: 0; bottom: 0; color: grey";
+    document.querySelector('body').appendChild(sign);
 
     console.log("■ Video Quality Fixer for Twitter ■ loaded successfully!");
 })();
