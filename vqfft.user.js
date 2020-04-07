@@ -12,20 +12,19 @@
 
 (function() {
     // unregister twitter serviceworker
-    function unregisterServiceWorker(){
-        unsafeWindow.navigator.serviceWorker.getRegistration().then(reg => {
-            if(reg) reg.unregister();
-        });
-    }
+    // function unregisterServiceWorker(){
+    //     unsafeWindow.navigator.serviceWorker.getRegistration().then(reg => {
+    //         if(reg) reg.unregister();
+    //     });
+    // }
 
-    unregisterServiceWorker();
-    unsafeWindow.navigator.serviceWorker.addEventListener('controllerchange', () => {
-        unregisterServiceWorker();
-    });
+    // unregisterServiceWorker();
+    // unsafeWindow.navigator.serviceWorker.addEventListener('controllerchange', () => {
+    //     unregisterServiceWorker();
+    // });
 
-    console.log("■ Video Quality Fixer for Twitter ■ service worker unregistered!");
-    console.log("■ Video Quality Fixer for Twitter ■ start loading...");
-
+    // console.log("■ Video Quality Fixer for Twitter ■ service worker unregistered!");
+    
     var realOpen = unsafeWindow.XMLHttpRequest.prototype.open;
     unsafeWindow.XMLHttpRequest.prototype.open = function() {
         var url = arguments['1'];
@@ -46,12 +45,10 @@
         return realOpen.apply(this, arguments);
     };
 
-    // a sign helps identify if userscript loaded successfully
+    // add a sign helps identify if userscript loaded successfully
     var sign = document.createElement("div");
     sign.innerText = "HD";
     sign.style = "position: fixed; right: 0; bottom: 0; color: grey";
     document.querySelector('body').appendChild(sign);
-
-    console.log("■ Video Quality Fixer for Twitter ■ loaded successfully!");
 })();
 
