@@ -3,9 +3,13 @@
 
 脚本加载成功后网页右下角会出现"HD"标志。
 
-## 使用限制
-只有Twitter的[service worker](https://developer.mozilla.org/docs/Web/API/Service_Worker_API)没有注册的时候可以正常使用本脚本。
+## 兼容性
+### Chrome 84.0.4147.125
+- tampermonkey (4.10): :o:
+- violentmonkey (2.12.7): :o:
 
-你可以使用[Block Service Workers (Chrome)](https://chrome.google.com/webstore/detail/block-service-workers/ceokjgeibfjfcboemhdpkdalankbmnej) 或者 [Service Worker Control (Firefox)](https://addons.mozilla.org/firefox/addon/service-worker-control/) 来取消Twitter的service worker并且阻止其再注册。
-
-:warning:注意: 取消service worker注册以后Twitter页面的加载速度会变慢。
+### Firefox 79.0
+- tampermonkey (4.11.6117): :o:
+  - 如果无法正常工作，可以尝试[这个](https://github.com/Tampermonkey/tampermonkey/issues/952#issuecomment-638373937)方法
+- violentmonkey (2.12.7): :x:
+- Greasemonkey (4.9): :x:
