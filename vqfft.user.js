@@ -1,12 +1,10 @@
 // ==UserScript==
 // @name                Video Quality Fixer for Twitter
-// @name:en             Video Quality Fixer for Twitter
 // @name:zh             Twitter 视频画质修复
 // @name:zh-CN          Twitter 视频画质修复
 // @namespace           https://github.com/flyhaozi
 // @version             0.1.1
 // @description         Force highest quality playback for Twitter videos.
-// @description:en      Force highest quality playback for Twitter videos.
 // @description:zh      强制 Twitter 播放最高画质的视频
 // @description:zh-CN   强制 Twitter 播放最高画质的视频
 // @author              flyhaozi
