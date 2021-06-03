@@ -5,11 +5,11 @@
 
 ## 兼容性
 ### Chrome 84.0.4147.125
-- tampermonkey (4.10): :o:
-- violentmonkey (2.12.7): :o:
+- tampermonkey (4.10): ⭕
+- violentmonkey (2.12.7): ⭕
 
 ### Firefox 79.0
-- tampermonkey (4.11.6117): :o:
+- tampermonkey (4.11.6117): ⭕
   - 如果无法正常工作，可以尝试[这个](https://github.com/Tampermonkey/tampermonkey/issues/952#issuecomment-638373937)方法
-- violentmonkey (2.12.7): :x:
-- Greasemonkey (4.9): :x:
+- violentmonkey (2.12.7): ❌
+- Greasemonkey (4.9): ❌
