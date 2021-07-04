@@ -9,12 +9,12 @@
 // @description:zh-CN   强制 Twitter 播放最高画质的视频
 // @author              flyhaozi
 // @match               https://twitter.com/*
-// @grant               unsafeWindow
+// @grant               none
 // ==/UserScript==
 
 (function() {
-    var realOpen = unsafeWindow.XMLHttpRequest.prototype.open;
-    unsafeWindow.XMLHttpRequest.prototype.open = function() {
+    var realOpen = window.XMLHttpRequest.prototype.open;
+    window.XMLHttpRequest.prototype.open = function() {
         var url = arguments['1'];
         url.startsWith("https://video.twimg.com") 
         && url.includes("m3u8?tag=") 
