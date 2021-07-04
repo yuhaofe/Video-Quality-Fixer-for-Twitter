@@ -1,7 +1,7 @@
 # Video Quality Fixer for Twitter
 Force highest quality playback for Twitter videos.
 
-There will be a "HQ" mark on the bottom right corner of the webpage if this script is loaded successfully. You can disable it by clicking on the mark.
+There will be a "HQ" mark on the top right corner of the webpage if this script is loaded successfully. You can disable it by clicking on the mark.
 
 ## Compatibility
 ### Chrome 84.0.4147.125

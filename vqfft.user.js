@@ -3,7 +3,7 @@
 // @name:zh             Twitter 视频画质修复
 // @name:zh-CN          Twitter 视频画质修复
 // @namespace           https://github.com/flyhaozi
-// @version             0.1.2
+// @version             0.1.3
 // @description         Force highest quality playback for Twitter videos.
 // @description:zh      强制 Twitter 播放最高画质的视频
 // @description:zh-CN   强制 Twitter 播放最高画质的视频
@@ -41,7 +41,7 @@
     if(!disableHQ) {
         var mark = document.createElement('button');
         mark.innerText = 'HQ';
-        mark.style = "position: fixed;right: 5px;bottom: 5px;color: white;border-width: 0px;border-radius: 5px;background-color: gray;opacity: 0.5;";
+        mark.style = "position: fixed;right: 5px;top: 5px;color: white;border-width: 0px;border-radius: 5px;background-color: gray;opacity: 0.5;";
         mark.onclick = function() {
             if(confirm('Do not display HQ mark anymore?')){
                 localStorage.setItem('vqfft-disablehq', 'true');
