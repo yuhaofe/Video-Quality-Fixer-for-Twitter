@@ -8,7 +8,7 @@
 // @description:zh      强制 Twitter 播放最高画质的视频
 // @description:zh-CN   强制 Twitter 播放最高画质的视频
 // @author              flyhaozi
-// @match               https://twitter.com/*
+// @match               https://*.twitter.com/*
 // @grant               none
 // ==/UserScript==
 
