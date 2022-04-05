@@ -1,5 +1,5 @@
 # Twitter 视频画质修复
-[![](https://img.shields.io/github/stars/flyhaozi/Video-Quality-Fixer-for-Twitter?style=social)](https://github.com/flyhaozi/Video-Quality-Fixer-for-Twitter)
+[![](https://img.shields.io/github/stars/yuhaofe/Video-Quality-Fixer-for-Twitter?style=social)](https://github.com/yuhaofe/Video-Quality-Fixer-for-Twitter)
 
 强制Twitter播放最高画质视频。
 

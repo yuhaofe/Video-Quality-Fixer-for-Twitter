@@ -1,5 +1,5 @@
 # Video Quality Fixer for Twitter
-[![](https://img.shields.io/github/stars/flyhaozi/Video-Quality-Fixer-for-Twitter?style=social)](https://github.com/flyhaozi/Video-Quality-Fixer-for-Twitter)
+[![](https://img.shields.io/github/stars/yuhaofe/Video-Quality-Fixer-for-Twitter?style=social)](https://github.com/yuhaofe/Video-Quality-Fixer-for-Twitter)
 
 Force highest quality playback for Twitter videos.
 
