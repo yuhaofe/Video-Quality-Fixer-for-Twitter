@@ -1,7 +1,7 @@
-# Twitter 视频画质修复
+# X (Twitter) 视频画质修复
 [![](https://img.shields.io/github/stars/yuhaofe/Video-Quality-Fixer-for-Twitter?style=social)](https://github.com/yuhaofe/Video-Quality-Fixer-for-Twitter)
 
-强制Twitter播放最高画质视频。
+强制X (Twitter)播放最高画质视频。
 
 脚本加载成功后网页右上角会出现"HQ"标志，点击即可不再显示。
 
