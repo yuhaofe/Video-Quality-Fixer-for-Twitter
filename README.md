@@ -1,7 +1,7 @@
-# Video Quality Fixer for Twitter
+# Video Quality Fixer for X (Twitter)
 [![](https://img.shields.io/github/stars/yuhaofe/Video-Quality-Fixer-for-Twitter?style=social)](https://github.com/yuhaofe/Video-Quality-Fixer-for-Twitter)
 
-Force highest quality playback for Twitter videos.
+Force highest quality playback for X (Twitter) videos.
 
 There will be a "HQ" mark on the top right corner of the webpage if this script is loaded successfully. You can disable it by clicking on the mark.
 
