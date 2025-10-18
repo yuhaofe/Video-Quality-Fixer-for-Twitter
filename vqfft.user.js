@@ -12,6 +12,7 @@
 // @match               https://mobile.x.com/*
 // @match               https://twitter.com/*
 // @match               https://mobile.twitter.com/*
+// @match               https://pro.x.com/*
 // @grant               none
 // ==/UserScript==
 
