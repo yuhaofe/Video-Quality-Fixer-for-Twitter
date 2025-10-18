@@ -3,7 +3,7 @@
 
 Force highest quality playback for X (Twitter) videos.
 
-There will be a "HQ" mark on the top right corner of the webpage if this script is loaded successfully. You can disable it by clicking on the mark.
+When the script loads successfully, a video quality indicator will appear in the top-right corner of the webpage. Users can then hover over this indicator to easily select their preferred video quality.
 
 ## Compatibility
 ### Chrome 84.0.4147.125
