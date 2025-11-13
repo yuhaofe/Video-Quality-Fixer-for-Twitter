@@ -3,16 +3,21 @@
 // @name:zh             X (Twitter) 视频画质修复
 // @name:zh-CN          X (Twitter) 视频画质修复
 // @namespace           https://github.com/yuhaofe
-// @version             0.3.0
+// @version             0.3.1
 // @description         Force highest quality playback for X (Twitter) videos.
 // @description:zh      强制 X (Twitter) 播放最高画质的视频
 // @description:zh-CN   强制 X (Twitter) 播放最高画质的视频
 // @author              yuhaofe
 // @match               https://x.com/*
 // @match               https://mobile.x.com/*
+// @match               https://pro.x.com/*
 // @match               https://twitter.com/*
 // @match               https://mobile.twitter.com/*
-// @match               https://pro.x.com/*
+// @match               https://pro.twitter.com/*
+// @exclude             https://x.com/i/cards-frame/*
+// @exclude             https://*.x.com/i/cards-frame/*
+// @exclude             https://twitter.com/i/cards-frame/*
+// @exclude             https://*.twitter.com/i/cards-frame/*
 // @grant               none
 // ==/UserScript==
 
@@ -171,7 +176,7 @@
             '<div class="select-item">Worst</div>' +
         '</div>' +
         '<style>' +
-            '.vqfft-quality-select { position: fixed; right: 5px; top: 5px; padding: 2px 0px; color: white; border-width: 0px; border-radius: 5px; background-color: rgba(0,0,0,0.4); cursor: pointer; }' +
+            '.vqfft-quality-select { position: fixed; right: 5px; top: 5px; width:fit-content; height:fit-content; padding: 2px 0px; color: white; border-width: 0px; border-radius: 5px; background-color: rgba(0,0,0,0.4); cursor: pointer; }' +
             '.vqfft-quality-select .item-list, .vqfft-quality-select .item-list.disable, .vqfft-quality-select:hover .item-list.disable { display: none; }' +
             '.vqfft-quality-select:hover .item-list { display: block; }' +
             '.vqfft-quality-select .current-item { padding: 0px 5px; }' +
